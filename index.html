@@ -1,61 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Abo Salah is Coming Soon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abo Salah WordPress School - Coming Soon</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background-color: #0073aa; /* WordPress blue */
+            color: white;
             text-align: center;
-            padding-top: 100px;
+            padding-top: 50px;
+            margin: 0;
         }
 
         .container {
-            background: #fff;
-            width: 50%;
-            margin: auto;
+            background: white;
+            color: #333;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
             padding: 40px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .logo {
+            font-size: 2.5em;
+            color: #0073aa;
         }
 
         .announcement {
             font-size: 2em;
             color: #333;
-            margin-bottom: 20px;
+            margin: 20px 0;
         }
 
-        .coming-soon {
-            font-size: 1.5em;
-            color: #555;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        .stay-tuned {
-            animation: fadeIn 3s ease-in-out;
-        }
-        /* Styles for Follow Me Section */
-        .follow-me {
-            margin-top: 30px;
+        .description {
             font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+
+        .social-icons svg {
+            height: 30px;
+            width: 30px;
+            margin: 0 10px;
         }
 
         .social-icons a {
-            margin: 0 10px;
-            color: #333; /* Change color as needed */
+            color: #0073aa;
+            transition: color 0.3s;
         }
 
         .social-icons a:hover {
-            color: #555; /* Change hover color as needed */
+            color: #004C70;
+        }
+
+        .footer {
+            font-size: 0.9em;
+            margin-top: 40px;
         }
     </style>
-    <!-- Font Awesome CDN for Social Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeW3kQ5hGmK7Lqt2S/tcnhGz9hVn6q5tFmNOUMcHA5Qf3p3FLOv6YlFz5YzNq" crossorigin="anonymous">
-    <!-- Existing Google Analytics Script -->
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics Script -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ4HWFXK18"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -66,21 +73,37 @@
     </script>
 </head>
 <body>
-    <div class="container">
-        <div class="announcement">Abo Salah is Coming Soon...</div>
-        <div class="coming-soon">Stay tuned!</div>
-        <div class="follow-me">
-            Follow Me:
-            <div class="social-icons">
-                <a href="https://www.youtube.com/@abosalahwp" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://twitter.com/abosalahwp" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.facebook.com/abosalahwp/" target="_blank"><i class="fab fa-facebook"></i></a>
-            </div>
-        </div>
+<div class="container">
+    <div class="logo">Abo Salah</div>
+    <div class="announcement">WordPress School is Coming Soon...</div>
+    <div class="description">
+        Join us to explore the world of WordPress. Whether you're a beginner or an expert, our WordPress School will help you elevate your skills. Stay tuned for our launch!
     </div>
 
-    <script>
-        // You can add any JavaScript here for extra functionality if needed.
-    </script>
+    <div class="follow-me">
+        Follow Me:<br><br>
+        <div class="social-icons">
+            <!-- YouTube Icon -->
+            <a href="https://www.youtube.com/@abosalahwp" target="_blank">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083C543.16 103.74 530.333 85.99 512.666 74.667C494.614 63.043 473.278 57.334 450.287 57.334H125.713C102.722 57.334 81.386 63.043 63.334 74.667C45.667 85.99 32.84 103.74 26.345 124.083C19.195 146.47 16 170.76 16 194.287V317.713C16 341.24 19.195 365.53 26.345 387.917C32.84 408.26 45.667 425.01 63.334 436.333C81.386 447.957 102.722 453.666 125.713 453.666H450.287C473.278 453.666 494.614 447.957 512.666 436.333C530.333 425.01 543.16 408.26 549.655 387.917C556.805 365.53 560 341.24 560 317.713V194.287C560 170.76 556.805 146.47 549.655 124.083ZM232 334V178L352 256L232 334Z"></path></svg>
+            </a>
+            <!-- Twitter Icon -->
+            <a href="https://twitter.com/abosalahwp" target="_blank">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.4 151.7C442 163.2 422.8 171.2 402.6 175.4C422.8 165 439 147.4 448 126C429.4 137.8 408.4 146.2 386 151.7C366.2 132 339.6 120 310.6 120C260.2 120 220 160.2 220 210.6C220 215.4 220.2 220.2 220.6 224.8C146 219.6 79.2 183.6 36.8 130.2C30.4 140.8 26.6 152.6 26.6 165C26.6 197.6 44.4 225.8 70.6 240C55.2 240 41.2 235.6 29 228.8V230.2C29 268.4 53.8 300.8 88.2 310.6C81.6 312.8 74.4 314 67 314C62.6 314 58.4 313.8 54.2 313.4C62.6 345.8 93.2 370 128.8 370C105.6 390.8 75.8 402 43.4 402C39 402 34.6 401.8 30.4 401.4C65 420.6 104.4 432 147.2 432C310.6 432 403.4 332 403.4 204.2C403.4 196.8 403.2 189.6 403 182.2C419.6 168.8 434.2 152.6 446 134.2Z"></path></svg>
+            </a>
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com/abosalahwp/" target="_blank">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66H196.83V142.9c0-25.35 12.08-50.24 52.24-50.24h38.32V6.26A682.67 682.67 0 0 0 202.4 0C128.88 0 79.84 75.12 79.84 155.36v38.08H16V288h63.84v224h110.89V288z"></path></svg>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2023 Abo Salah WordPress School. All rights reserved.
+</div>
+
+<!-- Additional JavaScript -->
+<!-- ... -->
 </body>
 </html>
