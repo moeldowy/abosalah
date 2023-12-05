@@ -1,13 +1,6 @@
-// Custom JavaScript for Abo Salah - WordPress School
-
 document.addEventListener('DOMContentLoaded', function() {
-    // Example: Toggle navigation menu in mobile view
-    var navbarToggler = document.querySelector('.navbar-toggler');
-    var navbarMenu = document.querySelector('.navbar-collapse');
+    // Example: Log a message when the DOM is fully loaded
+    console.log('Welcome to Abo Salah WordPress School!');
 
-    navbarToggler.addEventListener('click', function() {
-        navbarMenu.classList.toggle('show');
-    });
-
-    // Add more interactivity as needed
+    // More custom JavaScript code can be added here
 });
