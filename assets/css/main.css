@@ -1,77 +1,28 @@
-/* Custom body styles */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* Custom header styles */
-header {
-    background: #f8f9fa;
-    padding: 10px 0;
-}
-
-/* Custom hero banner styles */
-.hero-banner {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.hero-banner .banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-/* About Section Styles */
-#about {
-    padding: 20px 0;
-    background: #f9f9f9;
-}
-
-#about h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Courses Preview Section Styles */
-#courses-preview {
-    padding: 20px 0;
-}
-
-#courses-preview .course {
-    margin-bottom: 20px;
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-#courses-preview .course img {
+.coming-soon-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.logo-container img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
 }
 
-#courses-preview h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Testimonials Section Styles */
-#testimonials {
-    padding: 20px 0;
-    background: #f0f0f0;
-}
-
-#testimonials h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-
-/* Custom footer styles */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+.coming-soon-text {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
 }
