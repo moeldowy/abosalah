@@ -39,6 +39,9 @@
             padding: 20px 0;
             text-align: center;
         }
+        #more-content {
+            display: none;
+        }
     </style>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N7LF7ZL3HJ"></script>
@@ -55,7 +58,7 @@
 <!-- Header -->
 <header class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="#">Abo Salah - WordPress School</a>
+        <a class="navbar-brand" href="#"><img src="assets/images/abo-salah-hLogo.png" style="width: 40%;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -71,28 +74,28 @@
         </div>
     </div>
 </header>
-
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="container">
-        <h1>Master WordPress with Abo Salah</h1>
-        <p>Expert Consultation and Training in PHP and WordPress Development</p>
-        <a href="#contact" class="btn btn-primary btn-lg">Book Your Consultation</a>
-    </div>
-</section>
-
 <!-- About Section -->
 <section id="about" class="container my-5">
     <div class="section-title">
-        <h2>About Us</h2>
-        <p>Abo Salah is a seasoned WordPress expert with over 10 years of experience in PHP and WordPress design, theme and plugin development, WordPress optimization, and security. We offer both paid and free consultations to help you master WordPress.</p>
+        <h2>About Me</h2>
+        <p style="text-align: justify;">
+            As a Senior Software Engineer with over 15 years of experience, I have a proven track record of delivering high-quality web applications and digital solutions.
+          My expertise lies in developing robust and scalable web applications using PHP, Laravel, Restful Architecture, REST APIs, and WordPress.
+            <span id="more-content">
+          I am highly proficient in HTML5, CSS3, Bootstrap, TailWind, and JavaScript, and have some experience with Angular and React frameworks. I have a deep understanding of software development principles and can write clean, maintainable, and reusable code using OOP concepts.
+          I am well-versed in database management systems like MySQL, PostgreSQL, and MS SQL Server, and can design and implement efficient database schemas. I have experience working with various VCS tools like Git and have hands-on experience with GitHub, GitLab, and Bitbucket.
+          My expertise in Laravel and WordPress allows me to develop custom themes and plugins that meet specific client requirements. I have a keen eye for design and can create visually appealing and user-friendly interfaces that improve the overall user experience.
+          Overall, I am a dedicated and detail-oriented developer who is passionate about creating innovative solutions that drive business growth.
+        </span>
+        </p>
+        <a id="read-more-btn" class="btn btn-link" onclick="showMore()">Read More</a>
     </div>
 </section>
 
 <!-- Services Section -->
 <section id="services" class="container my-5">
     <div class="section-title">
-        <h2>Our Services</h2>
+        <h2>My Services</h2>
     </div>
     <div class="row">
         <div class="col-md-3">
@@ -181,33 +184,14 @@
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="container my-5">
+<section id="contact" class="container my-5" style="text-align: center;">
     <div class="section-title">
         <h2>Get in Touch</h2>
     </div>
-    <form>
-        <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" required>
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="mb-3">
-            <label for="subject" class="form-label">Subject</label>
-            <input type="text" class="form-control" id="subject" required>
-        </div>
-        <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-    <div class="mt-4">
-        <p>Email: <a href="mailto:info@abosalahwp.com">info@abosalahwp.com</a></p>
-        <p>Phone: +123 456 7890</p>
-        <p>Address: 123 WordPress St., Web City, Internet</p>
+    <div style="margin-top:5%;">
+        <a href="https://wa.me/201000765729" style="display: inline-block; padding: 10px 20px; background-color: #128c7e; color: white; font-size: 16px; font-family: Arial, sans-serif; text-decoration: none; border-radius: 5px; width: 200px; text-align: center;">
+            Contact Me
+        </a>
     </div>
 </section>
 
@@ -223,7 +207,19 @@
         </div>
     </div>
 </footer>
-
+<script>
+    function showMore() {
+        var moreContent = document.getElementById("more-content");
+        var readMoreBtn = document.getElementById("read-more-btn");
+        if (moreContent.style.display === "none") {
+            moreContent.style.display = "inline";
+            readMoreBtn.innerHTML = "Read Less";
+        } else {
+            moreContent.style.display = "none";
+            readMoreBtn.innerHTML = "Read More";
+        }
+    }
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
