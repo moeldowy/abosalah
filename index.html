@@ -4,7 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abo Salah WordPress School</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .pricing-table {
+            text-align: center;
+        }
+        .pricing-table .card {
+            margin: 20px;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N7LF7ZL3HJ"></script>
 <script>
@@ -17,16 +52,178 @@
 </head>
 <body>
 
-<div class="coming-soon-container">
-    <div class="logo-container">
-        <img src="assets/images/abosalah-new-logo.png" alt="Abo Salah WordPress School Logo" style="width: 300px;height: 300px">
+<!-- Header -->
+<header class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Abo Salah - WordPress School</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </div>
-    <div style="margin-top:5%;">
-         <a href="https://wa.me/201000765729" style="display: inline-block; padding: 10px 20px; background-color: #128c7e; color: white; font-size: 16px; font-family: Arial, sans-serif; text-decoration: none; border-radius: 5px;">
-        Contact Me
-    </a>
-    </div>
-</div>
+</header>
 
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <h1>Master WordPress with Abo Salah</h1>
+        <p>Expert Consultation and Training in PHP and WordPress Development</p>
+        <a href="#contact" class="btn btn-primary btn-lg">Book Your Consultation</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container my-5">
+    <div class="section-title">
+        <h2>About Us</h2>
+        <p>Abo Salah is a seasoned WordPress expert with over 10 years of experience in PHP and WordPress design, theme and plugin development, WordPress optimization, and security. We offer both paid and free consultations to help you master WordPress.</p>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="container my-5">
+    <div class="section-title">
+        <h2>Our Services</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">PHP and WordPress Design</h5>
+                    <p class="card-text">Get expert advice on designing and developing robust WordPress sites using PHP.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Theme and Plugin Development</h5>
+                    <p class="card-text">Learn how to create custom themes and plugins tailored to your needs.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">WordPress Optimization</h5>
+                    <p class="card-text">Enhance the performance of your WordPress site for better speed and efficiency.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">WordPress Security</h5>
+                    <p class="card-text">Protect your WordPress site from potential threats and vulnerabilities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="container my-5">
+    <div class="section-title">
+        <h2>Pricing</h2>
+    </div>
+    <div class="row pricing-table">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Half Hour Consultation</h5>
+                    <p class="card-text">$7</p>
+                    <p class="card-text">Get quick insights and solutions for your WordPress issues.</p>
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">One Hour Consultation</h5>
+                    <p class="card-text">$10</p>
+                    <p class="card-text">In-depth consultation for more complex problems and projects.</p>
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="container my-5">
+    <div class="section-title">
+        <h2>What Our Clients Say</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <blockquote class="blockquote">
+                <p>"Abo Salah helped me optimize my WordPress site, making it faster and more secure. Highly recommend!"</p>
+                <footer class="blockquote-footer">John Doe</footer>
+            </blockquote>
+        </div>
+        <div class="col-md-6">
+            <blockquote class="blockquote">
+                <p>"The best consultation I’ve ever had. Clear, concise, and extremely knowledgeable."</p>
+                <footer class="blockquote-footer">Jane Smith</footer>
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container my-5">
+    <div class="section-title">
+        <h2>Get in Touch</h2>
+    </div>
+    <form>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class="mt-4">
+        <p>Email: <a href="mailto:info@abosalahwp.com">info@abosalahwp.com</a></p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 WordPress St., Web City, Internet</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Abo Salah - WordPress School. All Rights Reserved.</p>
+        <div>
+            <a href="#" class="me-2">Facebook</a>
+            <a href="#" class="me-2">Twitter</a>
+            <a href="#" class="me-2">LinkedIn</a>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
