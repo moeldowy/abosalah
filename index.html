@@ -7,62 +7,72 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: math, sans-serif;
             background-color: #f0f8ff;
         }
         .navbar {
-            background-color: #128c7e;
+            background-color: #0db4da;
         }
         .navbar .navbar-brand {
             color: #fff;
         }
         .navbar .navbar-brand:hover {
-            color: #fff;
+            color: #000000;
         }
         .navbar .nav-link {
-            color: #fff;
+            font-size: 19px;
+            color: #000000;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: #fff !important;
+            font-size: 20px !important;
         }
         .navbar .nav-link:hover {
-            color: #fff;
+            color: #000000;
             font-weight: bold;
         }
         .section-title {
             text-align: center;
             margin: 50px 0;
-            color: #128c7e;
+            color: darkcyan;
         }
         .section-title h2 {
             font-size: 2.5rem;
         }
         #about {
-            background-color: #e3f2fd;
             padding: 15px 0;
+            padding: 10px 10px 0px 10px;
         }
         #services {
-            background-color: #fff3e0;
             padding: 15px 0;
         }
         #pricing {
-            background-color: #e0f7fa;
             padding: 15px 0;
         }
         .card {
             background-color: #fff;
             border: 1px solid #ddd;
         }
+
         .card-title {
-            color: #128c7e;
+            width: 50%;
+            color: darkcyan;
+        }
+        .card-price {
+            width: 50%;
+            color: darkcyan;
+            font-size: 25px;
         }
         .btn-primary {
-            background-color: #128c7e;
-            border-color: #128c7e;
+            background-color: darkcyan;
+            border-color: darkcyan;
         }
         .btn-primary:hover {
             background-color: #0056b3;
             border-color: #004494;
         }
         .footer {
-            background: #128c7e;
+            background: darkcyan;
             padding: 20px 0;
             text-align: center;
             color: #fff;
@@ -71,10 +81,7 @@
             color: #fff;
             margin: 0 10px;
         }
-        .footer a:hover {
-            color: #fff;
-        }
-        #more-content {
+      #more-content {
             display: none;
         }
     </style>
@@ -93,13 +100,13 @@
 <!-- Header -->
 <header class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="assets/images/abo-salah-hLogo.png" style="width: 40%;"></a>
+        <a class="navbar-brand" href="#"><img src="assets/images/abo-salah-hLogo.png" style="width: 40%;" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
@@ -113,7 +120,7 @@
 <section id="about" class="container my-2">
     <div class="section-title">
         <h2>About Me</h2>
-        <p style="text-align: justify; padding: 5%;">
+        <p style="text-align: justify;">
             As a Senior Software Engineer with over 15 years of experience, I have a proven track record of delivering high-quality web applications and digital solutions.
             My expertise lies in developing robust and scalable web applications using PHP, Laravel, Restful Architecture, REST APIs, and WordPress.
             <span id="more-content">
@@ -176,9 +183,11 @@
     <div class="row pricing-table">
         <div class="col-md-6">
             <div class="card">
+                <div class="card-header">
+                <h5 class="card-title">Half Hour Consultation</h5>
+                <span class="card-price">$15</span>
+            </div>
                 <div class="card-body">
-                    <h5 class="card-title">Half Hour Consultation</h5>
-                    <p class="card-text">$15</p>
                     <p class="card-text">Get quick insights and solutions for your WordPress issues.</p>
                     <a href="#contact" class="btn btn-primary">Book Now</a>
                 </div>
@@ -186,9 +195,11 @@
         </div>
         <div class="col-md-6">
             <div class="card">
-                <div class="card-body">
+                <div class="card-header">
                     <h5 class="card-title">One Hour Consultation</h5>
-                    <p class="card-text">$25</p>
+                    <span class="card-price">$25</span>
+                </div>
+                <div class="card-body">
                     <p class="card-text">In-depth consultation for more complex problems and projects.</p>
                     <a href="#contact" class="btn btn-primary">Book Now</a>
                 </div>
@@ -203,7 +214,7 @@
         <h2>Get in Touch</h2>
     </div>
     <div style="margin-top:5%;">
-        <a href="https://wa.me/201000765729" style="display: inline-block; padding: 10px 20px; background-color: #128c7e; color: white; font-size: 16px; font-family: Arial, sans-serif; text-decoration: none; border-radius: 5px; width: 200px; text-align: center;">
+        <a href="https://wa.me/201000765729" style="display: inline-block; padding: 10px 20px; background-color: darkcyan; color: white; font-size: 20px; font-family: Arial, sans-serif; text-decoration: none; border-radius: 5px; width: 200px; text-align: center;">
             Contact Me
         </a>
     </div>
@@ -223,8 +234,8 @@
 </footer>
 <script>
     function showMore() {
-        var moreContent = document.getElementById("more-content");
-        var readMoreBtn = document.getElementById("read-more-btn");
+        let moreContent = document.getElementById("more-content");
+        let readMoreBtn = document.getElementById("read-more-btn");
         if (moreContent.style.display === "none") {
             moreContent.style.display = "inline";
             readMoreBtn.innerHTML = "Read Less";
@@ -234,7 +245,7 @@
         }
     }
     document.addEventListener("DOMContentLoaded", function() {
-        var moreContent = document.getElementById("more-content");
+        let moreContent = document.getElementById("more-content");
         moreContent.style.display = "none";
     });
 </script>
