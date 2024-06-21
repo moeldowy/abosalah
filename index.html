@@ -8,55 +8,90 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
         }
-        .hero {
-            background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
-            background-size: cover;
-            color: white;
-            text-align: center;
-            padding: 100px 0;
+        .navbar {
+            background-color: #128c7e;
         }
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
+        .navbar .navbar-brand {
+            color: #fff;
         }
-        .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 30px;
+        .navbar .navbar-brand:hover {
+            color: #fff;
+        }
+        .navbar .nav-link {
+            color: #fff;
+        }
+        .navbar .nav-link:hover {
+            color: #fff;
+            font-weight: bold;
         }
         .section-title {
             text-align: center;
             margin: 50px 0;
+            color: #128c7e;
         }
-        .pricing-table {
-            text-align: center;
+        .section-title h2 {
+            font-size: 2.5rem;
         }
-        .pricing-table .card {
-            margin: 20px;
+        #about {
+            background-color: #e3f2fd;
+            padding: 15px 0;
+        }
+        #services {
+            background-color: #fff3e0;
+            padding: 15px 0;
+        }
+        #pricing {
+            background-color: #e0f7fa;
+            padding: 15px 0;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+        .card-title {
+            color: #128c7e;
+        }
+        .btn-primary {
+            background-color: #128c7e;
+            border-color: #128c7e;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004494;
         }
         .footer {
-            background: #f8f9fa;
+            background: #128c7e;
             padding: 20px 0;
             text-align: center;
+            color: #fff;
+        }
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            color: #fff;
         }
         #more-content {
             display: none;
         }
     </style>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N7LF7ZL3HJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N7LF7ZL3HJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'G-N7LF7ZL3HJ');
-</script>
+        gtag('config', 'G-N7LF7ZL3HJ');
+    </script>
 </head>
 <body>
 
 <!-- Header -->
-<header class="navbar navbar-expand-lg navbar-light bg-light">
+<header class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
         <a class="navbar-brand" href="#"><img src="assets/images/abo-salah-hLogo.png" style="width: 40%;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,25 +103,25 @@
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
 </header>
+
 <!-- About Section -->
-<section id="about" class="container my-5">
+<section id="about" class="container my-2">
     <div class="section-title">
         <h2>About Me</h2>
-        <p style="text-align: justify;">
+        <p style="text-align: justify; padding: 5%;">
             As a Senior Software Engineer with over 15 years of experience, I have a proven track record of delivering high-quality web applications and digital solutions.
-          My expertise lies in developing robust and scalable web applications using PHP, Laravel, Restful Architecture, REST APIs, and WordPress.
+            My expertise lies in developing robust and scalable web applications using PHP, Laravel, Restful Architecture, REST APIs, and WordPress.
             <span id="more-content">
-          I am highly proficient in HTML5, CSS3, Bootstrap, TailWind, and JavaScript, and have some experience with Angular and React frameworks. I have a deep understanding of software development principles and can write clean, maintainable, and reusable code using OOP concepts.
-          I am well-versed in database management systems like MySQL, PostgreSQL, and MS SQL Server, and can design and implement efficient database schemas. I have experience working with various VCS tools like Git and have hands-on experience with GitHub, GitLab, and Bitbucket.
-          My expertise in Laravel and WordPress allows me to develop custom themes and plugins that meet specific client requirements. I have a keen eye for design and can create visually appealing and user-friendly interfaces that improve the overall user experience.
-          Overall, I am a dedicated and detail-oriented developer who is passionate about creating innovative solutions that drive business growth.
-        </span>
+                I am highly proficient in HTML5, CSS3, Bootstrap, TailWind, and JavaScript, and have some experience with Angular and React frameworks. I have a deep understanding of software development principles and can write clean, maintainable, and reusable code using OOP concepts.
+                I am well-versed in database management systems like MySQL, PostgreSQL, and MS SQL Server, and can design and implement efficient database schemas. I have experience working with various VCS tools like Git and have hands-on experience with GitHub, GitLab, and Bitbucket.
+                My expertise in Laravel and WordPress allows me to develop custom themes and plugins that meet specific client requirements. I have a keen eye for design and can create visually appealing and user-friendly interfaces that improve the overall user experience.
+                Overall, I am a dedicated and detail-oriented developer who is passionate about creating innovative solutions that drive business growth.
+            </span>
         </p>
         <a id="read-more-btn" class="btn btn-link" onclick="showMore()">Read More</a>
     </div>
@@ -117,7 +152,7 @@
         <div class="col-md-3">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">WordPress Optimization</h5>
+                    <h5 class="card-title">WordPress App Optimization</h5>
                     <p class="card-text">Enhance the performance of your WordPress site for better speed and efficiency.</p>
                 </div>
             </div>
@@ -125,7 +160,7 @@
         <div class="col-md-3">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">WordPress Security</h5>
+                    <h5 class="card-title">WordPress Security and Protection</h5>
                     <p class="card-text">Protect your WordPress site from potential threats and vulnerabilities.</p>
                 </div>
             </div>
@@ -143,7 +178,7 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Half Hour Consultation</h5>
-                    <p class="card-text">$7</p>
+                    <p class="card-text">$15</p>
                     <p class="card-text">Get quick insights and solutions for your WordPress issues.</p>
                     <a href="#contact" class="btn btn-primary">Book Now</a>
                 </div>
@@ -153,32 +188,11 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">One Hour Consultation</h5>
-                    <p class="card-text">$10</p>
+                    <p class="card-text">$25</p>
                     <p class="card-text">In-depth consultation for more complex problems and projects.</p>
                     <a href="#contact" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- Testimonials Section -->
-<section id="testimonials" class="container my-5">
-    <div class="section-title">
-        <h2>What Our Clients Say</h2>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <blockquote class="blockquote">
-                <p>"Abo Salah helped me optimize my WordPress site, making it faster and more secure. Highly recommend!"</p>
-                <footer class="blockquote-footer">John Doe</footer>
-            </blockquote>
-        </div>
-        <div class="col-md-6">
-            <blockquote class="blockquote">
-                <p>"The best consultation I’ve ever had. Clear, concise, and extremely knowledgeable."</p>
-                <footer class="blockquote-footer">Jane Smith</footer>
-            </blockquote>
         </div>
     </div>
 </section>
@@ -219,6 +233,10 @@
             readMoreBtn.innerHTML = "Read More";
         }
     }
+    document.addEventListener("DOMContentLoaded", function() {
+        var moreContent = document.getElementById("more-content");
+        moreContent.style.display = "none";
+    });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
