@@ -3,76 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abo Salah a WordPress School</title>
+    <title>Abo Salah - WordPress School</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: math, sans-serif;
-            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
         }
         .navbar {
-            background-color: #0db4da;
+            background-color: #007bff;
         }
         .navbar .navbar-brand {
             color: #fff;
         }
         .navbar .navbar-brand:hover {
-            color: #000000;
+            color: #fff;
         }
         .navbar .nav-link {
-            font-size: 19px;
-            color: #000000;
-        }
-        .navbar-dark .navbar-nav .nav-link {
-            color: #fff !important;
-            font-size: 20px !important;
+            font-size: 18px;
+            color: #fff;
         }
         .navbar .nav-link:hover {
-            color: #000000;
-            font-weight: bold;
+            color: #dfe6e9;
         }
         .section-title {
             text-align: center;
-            margin: 50px 0;
-            color: darkcyan;
+            margin-bottom: 50px;
+            color: #007bff;
         }
         .section-title h2 {
             font-size: 2.5rem;
         }
-        #about {
-            padding: 15px 0;
-            padding: 10px 10px 0px 10px;
-        }
-        #services {
-            padding: 15px 0;
-        }
-        #pricing {
-            padding: 15px 0;
+        section {
+            padding: 60px 0;
         }
         .card {
-            background-color: #fff;
-            border: 1px solid #ddd;
+            border: none;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
         .card-title {
-            width: 50%;
-            color: darkcyan;
+            color: #007bff;
         }
         .card-price {
-            width: 50%;
-            color: darkcyan;
-            font-size: 25px;
+            color: #007bff;
+            font-size: 1.5rem;
         }
         .btn-primary {
-            background-color: darkcyan;
-            border-color: darkcyan;
+            background-color: #007bff;
+            border-color: #007bff;
         }
         .btn-primary:hover {
             background-color: #0056b3;
             border-color: #004494;
         }
         .footer {
-            background: darkcyan;
+            background: #007bff;
             padding: 20px 0;
             text-align: center;
             color: #fff;
@@ -81,19 +71,10 @@
             color: #fff;
             margin: 0 10px;
         }
-      #more-content {
+        #more-content {
             display: none;
         }
     </style>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N7LF7ZL3HJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-N7LF7ZL3HJ');
-    </script>
 </head>
 <body>
 
@@ -106,7 +87,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
@@ -117,16 +98,16 @@
 </header>
 
 <!-- About Section -->
-<section id="about" class="container my-2">
+<section id="about" class="container">
     <div class="section-title">
         <h2>About Me</h2>
-        <p style="text-align: justify;">
+        <p>
             As a Senior Software Engineer with over 15 years of experience, I have a proven track record of delivering high-quality web applications and digital solutions.
             My expertise lies in developing robust and scalable web applications using PHP, Laravel, Restful Architecture, REST APIs, and WordPress.
             <span id="more-content">
-                I am highly proficient in HTML5, CSS3, Bootstrap, TailWind, and JavaScript, and have some experience with Angular and React frameworks. I have a deep understanding of software development principles and can write clean, maintainable, and reusable code using OOP concepts.
-                I am well-versed in database management systems like MySQL, PostgreSQL, and MS SQL Server, and can design and implement efficient database schemas. I have experience working with various VCS tools like Git and have hands-on experience with GitHub, GitLab, and Bitbucket.
-                My expertise in Laravel and WordPress allows me to develop custom themes and plugins that meet specific client requirements. I have a keen eye for design and can create visually appealing and user-friendly interfaces that improve the overall user experience.
+                I am highly proficient in HTML5, CSS3, Bootstrap, TailWind, and JavaScript, and have some experience with Angular and React frameworks. I have a deep understanding of software development principles and best practices.
+                I am well-versed in database management systems like MySQL, PostgreSQL, and MS SQL Server, and can design and implement efficient database schemas. I have experience working with various development tools and platforms.
+                My expertise in Laravel and WordPress allows me to develop custom themes and plugins that meet specific client requirements. I have a keen eye for design and can create visually appealing and user-friendly web interfaces.
                 Overall, I am a dedicated and detail-oriented developer who is passionate about creating innovative solutions that drive business growth.
             </span>
         </p>
@@ -135,7 +116,7 @@
 </section>
 
 <!-- Services Section -->
-<section id="services" class="container my-5">
+<section id="services" class="container">
     <div class="section-title">
         <h2>My Services</h2>
     </div>
@@ -176,17 +157,17 @@
 </section>
 
 <!-- Pricing Section -->
-<section id="pricing" class="container my-5">
+<section id="pricing" class="container">
     <div class="section-title">
         <h2>Pricing</h2>
     </div>
-    <div class="row pricing-table">
+    <div class="row">
         <div class="col-md-6">
             <div class="card">
-                <div class="card-header">
-                <h5 class="card-title">Half Hour Consultation</h5>
-                <span class="card-price">$15</span>
-            </div>
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">Half Hour Consultation</h5>
+                    <span class="card-price">$15</span>
+                </div>
                 <div class="card-body">
                     <p class="card-text">Get quick insights and solutions for your WordPress issues.</p>
                     <a href="#contact" class="btn btn-primary">Book Now</a>
@@ -195,8 +176,8 @@
         </div>
         <div class="col-md-6">
             <div class="card">
-                <div class="card-header">
-                    <h5 class="card-title">One Hour Consultation</h5>
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">One Hour Consultation</h5>
                     <span class="card-price">$25</span>
                 </div>
                 <div class="card-body">
@@ -209,14 +190,12 @@
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="container my-5" style="text-align: center;">
+<section id="contact" class="container text-center">
     <div class="section-title">
         <h2>Get in Touch</h2>
     </div>
-    <div style="margin-top:5%;">
-        <a href="https://wa.me/201000765729" style="display: inline-block; padding: 10px 20px; background-color: darkcyan; color: white; font-size: 20px; font-family: Arial, sans-serif; text-decoration: none; border-radius: 5px; width: 200px; text-align: center;">
-            Contact Me
-        </a>
+    <div>
+        <a href="https://wa.me/201000765729" class="btn btn-primary" style="font-size: 20px; padding: 10px 20px;">Contact Me</a>
     </div>
 </section>
 
