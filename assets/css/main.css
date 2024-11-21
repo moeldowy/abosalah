@@ -106,7 +106,73 @@ footer {
     padding: 20px 0;
     margin-top: auto;
 }
+/* Add to main.css */
+.contact-section {
+    padding: 60px 0;
+    background: #f9f9f9;
+}
 
+.contact-wrapper {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.contact-form {
+    flex: 2;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background: var(--secondary-color);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-social {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+}
+
+.whatsapp-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #25D366;
+    font-weight: bold;
+}
+
+.whatsapp-icon {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     nav {
