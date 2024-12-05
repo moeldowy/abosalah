@@ -38,15 +38,20 @@
         <div class="container">
             <h1>My Portfolio</h1>
             <div class="portfolio-grid">
-                <div class="portfolio-card">
-                    <img src="assets/images/project1.jpg" alt="Project 1">
+                <!-- Initial 9 projects -->
+                <div class="portfolio-card" data-index="1">
+                    <img src="../assets/images/project1.jpg" alt="Project 1">
                     <div class="portfolio-info">
-                        <h3>Custom E-commerce Website</h3>
-                        <p>WordPress + WooCommerce development</p>
+                        <h3>Project 1</h3>
+                        <p>WordPress Development</p>
                         <a href="#" class="portfolio-link">View Details</a>
                     </div>
                 </div>
-                <!-- Add more portfolio items as needed -->
+                <!-- Repeat for projects 2-21 -->
+                <!-- Projects 10-21 should have style="display: none" -->
+            </div>
+            <div class="load-more-container">
+                <button id="loadMore" class="load-more-btn">Load More</button>
             </div>
         </div>
     </main>
@@ -57,6 +62,6 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>
