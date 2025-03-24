@@ -524,3 +524,111 @@ footer::before {
 .fadeIn {
     animation: fadeIn 0.8s ease forwards;
 }
+/* Portfolio Section */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.section-intro {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    max-width: 800px;
+}
+
+.portfolio-item {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    border-top: 4px solid var(--primary-color);
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-hover);
+    border-top: 4px solid var(--accent-color);
+}
+
+.portfolio-item h3 {
+    padding: 1rem;
+    margin: 0;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+}
+
+.portfolio-content {
+    padding: 1rem;
+}
+
+.screenshot-container {
+    height: 280px;
+    overflow-y: auto;
+    border: 1px solid #eee;
+    margin-bottom: 1rem;
+    position: relative;
+    border-radius: 4px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) #eee;
+}
+
+.screenshot-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.screenshot-container::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+.screenshot-container::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.screenshot {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-details {
+    padding: 0.5rem 0;
+}
+
+.portfolio-details p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.portfolio-link {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    transition: var(--transition);
+}
+
+.portfolio-link:hover {
+    background-color: var(--accent-dark);
+    transform: translateY(-2px);
+}
+@media (max-width: 992px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* Keep your existing styles here */
+}
+
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    /* Keep your existing styles here */
+}
