@@ -16,18 +16,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="fadeIn">
-        <div class="hero-content" style="display: flex;flex-direction: column;align-items: center;">
-            <div style="background-color: white;padding: 1%;border:5px solid #fde09d;border-radius: 2%;width: 150px;height: 150px;text-align: center;display: flex;align-self: center;align-items: center;"><img src="assets/imgs/abosalah-logo.webp" alt="Mohammed Salah" style="border-radius: 0;width: 150px;height: 100px;"></div>
-            <p class="tagline">WordPress Maestro</p>
-            <p>Building high-performance, secure WordPress solutions for over 15 years</p>
-            <a href="#contact" class="cta-button">Get in Touch</a>
-        </div>
-    </header>
-
     <nav>
         <div class="nav-container">
-            <a href="#" class="logo">Abo Salah</a>
+            <a href="#" class="logo"><img src="assets/imgs/abosalah-logo.webp" alt="Mohammed Salah" style="border-radius: 0;width: 120px;height: 90px;"></a>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
@@ -252,56 +243,120 @@
                 </div>
             </div>
         </section>
-        <section id="skills" class="fadeIn">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">WordPress</div>
-                <div class="skill-item">PHP</div>
-                <div class="skill-item">JavaScript</div>
-                <div class="skill-item">MySQL</div>
-                <div class="skill-item">HTML/CSS</div>
-                <div class="skill-item">React</div>
-                <div class="skill-item">Angular</div>
-                <div class="skill-item">REST API</div>
-                <div class="skill-item">GraphQL</div>
-                <div class="skill-item">Redis</div>
-                <div class="skill-item">Nginx</div>
-                <div class="skill-item">Git</div>
-                <div class="skill-item">CI/CD</div>
-                <div class="skill-item">Docker</div>
-                <div class="skill-item">AWS</div>
-                <div class="skill-item">Security</div>
+       <section id="skills" class="fadeIn">
+            <h2>Technical Arsenal</h2>
+            <div class="skills-container">
+                <div class="skill-galaxy">
+                    <div class="skill-clusters">
+                        <div class="skill-cluster" id="cluster-1">
+                            <div class="cluster-title">Core</div>
+                            <div class="skill-bubble" data-level="95">WordPress</div>
+                            <div class="skill-bubble" data-level="90">PHP</div>
+                            <div class="skill-bubble" data-level="85">JavaScript</div>
+                            <div class="skill-bubble" data-level="90">MySQL</div>
+                        </div>
+                        <div class="skill-cluster" id="cluster-2">
+                            <div class="cluster-title">Front-End</div>
+                            <div class="skill-bubble" data-level="85">HTML/CSS</div>
+                            <div class="skill-bubble" data-level="80">React</div>
+                            <div class="skill-bubble" data-level="75">Angular</div>
+                        </div>
+                        <div class="skill-cluster" id="cluster-3">
+                            <div class="cluster-title">APIs</div>
+                            <div class="skill-bubble" data-level="88">REST API</div>
+                            <div class="skill-bubble" data-level="82">GraphQL</div>
+                        </div>
+                        <div class="skill-cluster" id="cluster-4">
+                            <div class="cluster-title">Infrastructure</div>
+                            <div class="skill-bubble" data-level="80">Redis</div>
+                            <div class="skill-bubble" data-level="85">Nginx</div>
+                            <div class="skill-bubble" data-level="90">Git</div>
+                            <div class="skill-bubble" data-level="75">CI/CD</div>
+                        </div>
+                        <div class="skill-cluster" id="cluster-5">
+                            <div class="cluster-title">Deployment</div>
+                            <div class="skill-bubble" data-level="78">Docker</div>
+                            <div class="skill-bubble" data-level="75">AWS</div>
+                            <div class="skill-bubble" data-level="92">Security</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="contact" class="fadeIn">
+       <section id="contact" class="fadeIn">
             <h2>Get in Touch</h2>
-            <div class="contact-form">
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <div class="button-group">
+                            <button type="submit" class="submit-btn">Send Message</button>
+                            <a href="#" id="whatsappBtn" class="submit-btn" style="background-color: #25D366; margin-left: 10px; text-decoration: none; text-align: center;">
+                                <i class="fab fa-whatsapp"></i> WhatsApp Me
+                            </a>
+                        </div>
+                        <div id="form-status" style="margin-top: 15px;"></div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="contact-cards">
+                    <div class="linkedin-card">
+                        <div class="linkedin-header">
+                            <div class="linkedin-logo">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                        </div>
+                        <div class="linkedin-profile">
+                            <div class="profile-image">
+                                <img src="assets/imgs/profile-pic-15.png" alt="Mohammed Salah">
+                            </div>
+                            <div class="profile-details">
+                                <h3>Mohammed Salah</h3>
+                                <p class="job-title">Senior Software Engineer</p>
+                                <div class="profile-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">2k+</span>
+                                        <span class="stat-label">Connections</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">2.3K+</span>
+                                        <span class="stat-label">Followers</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.linkedin.com/in/moeldowy/" class="linkedin-btn" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> View Profile
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-card">
+                        <div class="cv-icon">
+                            <i class="far fa-file-pdf"></i>
+                        </div>
+                        <div class="cv-details">
+                            <h3>Download My CV</h3>
+                            <p>Get a complete overview of my experience and qualifications</p>
+                            <a href="assets/docs/mohammed-salah-cv.pdf" class="cv-download-btn" download>
+                                <i class="fas fa-download"></i> Download CV
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <div class="button-group">
-                    <button type="submit" class="submit-btn">Send Message</button>
-                    <a href="#" id="whatsappBtn" class="submit-btn" style="background-color: #25D366; margin-left: 10px; text-decoration: none; text-align: center;">
-                        <i class="fab fa-whatsapp"></i> WhatsApp Me
-                    </a>
-                </div>
-                <div id="form-status" style="margin-top: 15px;"></div>
-            </form>
             </div>
         </section>
     </main>
@@ -313,7 +368,7 @@
             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
-        <p>&copy; 2023 Mohammed Salah. All rights reserved.</p>
+        <p>&copy; 2025 Abo Salah. All rights reserved.</p>
     </footer>
 <script>// Form handling with EmailJS
             const contactForm = document.getElementById('contactForm');

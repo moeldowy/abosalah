@@ -326,35 +326,175 @@ h3 {
     margin-top: 0.3rem;
 }
 
-/* Skills Section */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 1rem;
+/* Skills Section - Floating Bubbles Design */
+.skills-container {
+    height: 360px;
+    position: relative;
+    margin: 2rem auto;
+    max-width: 900px;
+    background: linear-gradient(135deg, rgba(1, 68, 110, 0.05) 0%, rgba(1, 83, 133, 0.1) 100%);
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-.skill-item {
+.skill-galaxy {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.skill-clusters {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+}
+
+.skill-cluster {
+    position: relative;
+    padding: 40px 15px 15px;
+    min-width: 180px;
+    height: 170px;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.skill-cluster:hover {
+    box-shadow: 0 5px 15px rgba(1, 83, 133, 0.2);
+    transform: translateY(-5px);
     background-color: white;
-    border-radius: var(--border-radius);
-    padding: 1rem;
+}
+
+.cluster-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    background-color: var(--primary-color);
+    color: white;
     text-align: center;
-    box-shadow: var(--box-shadow);
-    transition: var(--transition);
-    border-bottom: 3px solid var(--primary-color);
-}
-
-.skill-item:hover {
-    background-color: var(--accent-color);
-    transform: translateY(-3px);
-    box-shadow: var(--box-shadow-hover);
-    color: var(--primary-color);
     font-weight: 600;
+    border-radius: 12px 12px 0 0;
+    font-size: 0.9rem;
 }
 
+.skill-bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border-radius: 20px;
+    padding: 6px 12px;
+    margin: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.skill-bubble:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(1, 83, 133, 0.3);
+    z-index: 10;
+}
+
+.skill-bubble::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    opacity: 0.15;
+    transition: width 0.3s ease;
+}
+
+.skill-bubble:hover::before {
+    animation: pulse-skill 1s infinite alternate;
+}
+
+/* Generate skill level indicators based on data-level attribute */
+.skill-bubble[data-level="95"]::before { width: 95%; }
+.skill-bubble[data-level="90"]::before { width: 90%; }
+.skill-bubble[data-level="88"]::before { width: 88%; }
+.skill-bubble[data-level="85"]::before { width: 85%; }
+.skill-bubble[data-level="82"]::before { width: 82%; }
+.skill-bubble[data-level="80"]::before { width: 80%; }
+.skill-bubble[data-level="78"]::before { width: 78%; }
+.skill-bubble[data-level="75"]::before { width: 75%; }
+
+/* Unique animations for each cluster */
+#cluster-1 {
+    animation: float 8s ease-in-out infinite;
+}
+
+#cluster-2 {
+    animation: float 7s ease-in-out infinite 0.5s;
+}
+
+#cluster-3 {
+    animation: float 9s ease-in-out infinite 1s;
+}
+
+#cluster-4 {
+    animation: float 8.5s ease-in-out infinite 1.5s;
+}
+
+#cluster-5 {
+    animation: float 7.5s ease-in-out infinite 2s;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes pulse-skill {
+    0% { opacity: 0.15; }
+    100% { opacity: 0.3; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skills-container {
+        height: auto;
+    }
+
+    .skill-clusters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-cluster {
+        width: 90%;
+        height: auto;
+        min-height: 140px;
+        margin-bottom: 15px;
+    }
+}
 /* Contact Section */
-.contact-form {
-    max-width: 600px;
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
+}
+.contact-form {
     background-color: white;
     padding: 2rem;
     border-radius: var(--border-radius);
@@ -362,6 +502,174 @@ h3 {
     border-left: 5px solid var(--accent-color);
 }
 
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* LinkedIn Card */
+.linkedin-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.linkedin-header {
+    background-color: #0077B5;
+    height: 60px;
+    position: relative;
+}
+
+.linkedin-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.linkedin-profile {
+    padding: 1rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.profile-image {
+
+}
+
+.profile-image img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.profile-details {
+    flex: 1;
+}
+
+.profile-details h3 {
+    margin: 0 0 0.5rem;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.job-title {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.linkedin-btn {
+    display: inline-block;
+    background-color: #0077B5;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.linkedin-btn:hover {
+    background-color: #005582;
+    transform: translateY(-2px);
+}
+
+/* CV Card */
+.cv-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.cv-icon {
+    font-size: 2.5rem;
+    color: #E74C3C;
+}
+
+.cv-details {
+    flex: 1;
+}
+
+.cv-details h3 {
+    margin: 0 0 0.5rem;
+    color: #333;
+}
+
+.cv-details p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.cv-download-btn {
+    display: inline-block;
+    background-color: #E74C3C;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.cv-download-btn:hover {
+    background-color: #C0392B;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .linkedin-profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-stats {
+        justify-content: center;
+    }
+
+    .cv-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 .form-group {
     margin-bottom: 1.5rem;
 }
