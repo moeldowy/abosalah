@@ -3,108 +3,413 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abo Salah - WordPress Expert</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N7LF7ZL3HJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N7LF7ZL3HJ');
-</script>
+    <title>Mohammed Salah | Senior Software Engineer</title>
+    <meta name="description" content="Mohammed Salah - Senior Software Engineer specializing in WordPress Development, Performance Optimization, and Web Security">
+    <!-- Favicon links -->
+    <link rel="icon" href="assets/imgs/abosalah-logo.webp" type="image/webp">
+    <link rel="apple-touch-icon" href="assets/imgs/abosalah-logo.webp">
+    <meta name="msapplication-TileImage" content="assets/imgs/abosalah-logo.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <img src="assets/images/Logo-aboSalah.png" alt="Abo Salah Logo" class="logo">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="pages/portfolio.html">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <header class="fadeIn">
+        <div class="hero-content" style="display: flex;flex-direction: column;align-items: center;">
+            <div style="background-color: white;padding: 1%;border:5px solid #fde09d;border-radius: 2%;width: 150px;height: 150px;text-align: center;display: flex;align-self: center;align-items: center;"><img src="assets/imgs/abosalah-logo.webp" alt="Mohammed Salah" style="border-radius: 0;width: 150px;height: 100px;"></div>
+            <p class="tagline">WordPress Maestro</p>
+            <p>Building high-performance, secure WordPress solutions for over 15 years</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
         </div>
     </header>
 
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Abo Salah</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
     <main>
-        <section id="hero">
-            <div class="container">
-                <h1>WordPress Development Expert</h1>
-                <p>Hello! My name is Mohammed Salah and as a Senior Software Engineer with over 15 years of experience, I have a proven track record of delivering high-quality web applications and digital solutions. My expertise lies in developing robust and scalable web applications using PHP, Laravel, Restful Architecture, REST APIs and WordPress.
-                    I am highly proficient in HTML5, CSS3, Bootstrap, TailWind, and JavaScript, and have some experience with Angular and React frameworks. I have a deep understanding of software development principles and can write clean, maintainable, and reusable code using OOP concepts.
-                    I am well-versed in database management systems like MySQL, PostgreSQL, and MS SQL Server, and can design and implement efficient database schemas. I have experience working with various VCS tools like Git and have hands-on experience with GitHub, GitLab, and Bitbucket.
-                    My expertise in Laravel and WordPress allows me to develop custom themes and plugins that meet specific client requirements. I have a keen eye for design and can create visually appealing and user-friendly interfaces that improve the overall user experience.
-                    Overall, I am a dedicated and detail-oriented developer who is passionate about creating innovative solutions that drive business growth.</p>
-                <a href="#contact" class="cta-button">Get Started</a>
-            </div>
-        </section>
+        <section id="about" class="fadeIn">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hi, I'm Mohammed Salah</h3>
+                    <p style="font-size: 13px; color: darkslateblue;">Senior Software Engineer | WordPress Development & Performance Optimization Expert</p>
 
-        <section id="services">
-            <div class="container">
-                <h2>Services</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h3>Custom WordPress Development</h3>
-                        <p>Tailored solutions for your unique needs</p>
+                    <div class="bio-content" style="font-size: 15px;">
+                        <div class="bio-short" id="bio-short">
+                            <p>Hello, as a Senior Software Engineer with over 15 years of experience specializing in WordPress development, performance optimization, automation, and web security. I have a proven track record of delivering high-performance, scalable, and secure web applications that drive business success.</p>
+                            <p>I'm passionate about developing cutting-edge digital solutions that empower businesses to achieve their goals efficiently and effectively.</p>
+                        </div>
+
+                        <div class="bio-full" id="bio-full" style="display: none;">
+                            <p>Hello, my name is Mohammed Salah, a Senior Software Engineer with over 15 years of experience specializing in WordPress development, performance optimization, automation, and web security. I have a proven track record of delivering high-performance, scalable, and secure web applications that drive business success.</p>
+
+                            <h4>WordPress Development & Customization</h4>
+                            <p>As an expert in WordPress architecture, I specialize in developing custom themes, plugins, and API integrations to extend WordPress functionality beyond its core capabilities. I build scalable, maintainable, and SEO-friendly WordPress solutions tailored to specific business needs while adhering to best coding practices and WordPress coding standards.</p>
+
+                            <h4>Performance Optimization</h4>
+                            <p>Website speed and efficiency are crucial for both user experience and SEO rankings. I focus on performance tuning, including:</p>
+                            <ul>
+                                <li>✅ Database optimization (query caching, indexing, and schema refinement)</li>
+                                <li>✅ Advanced caching strategies (object caching, page caching, and CDN integration)</li>
+                                <li>✅ Minification & asset optimization (CSS/JS compression, lazy loading, and async loading)</li>
+                                <li>✅ Server-side performance enhancements (PHP opcode caching, Redis, and Nginx configurations)</li>
+                            </ul>
+
+                            <h4>Automation & DevOps Integration</h4>
+                            <p>To streamline development and deployment, I implement automation techniques such as:</p>
+                            <ul>
+                                <li>🔹 CI/CD pipelines for seamless updates and deployments using GitHub Actions, GitLab CI/CD, and Bitbucket Pipelines</li>
+                                <li>🔹 Automated backups and disaster recovery strategies to prevent data loss</li>
+                                <li>🔹 Scheduled tasks and background jobs to improve efficiency and reduce manual work</li>
+                            </ul>
+
+                            <h4>Security & Compliance</h4>
+                            <p>Web security is a top priority, and I ensure robust security hardening by:</p>
+                            <ul>
+                                <li>🔹 Implementing secure authentication (2FA, OAuth, JWT)</li>
+                                <li>🔹 Protecting against SQL injections, XSS, and CSRF attacks</li>
+                                <li>🔹 Enforcing SSL/TLS encryption and secure headers</li>
+                                <li>🔹 Conducting regular security audits and vulnerability assessments</li>
+                            </ul>
+
+                            <h4>WordPress API & Headless Development</h4>
+                            <p>I have extensive experience with WordPress REST API and GraphQL, enabling headless WordPress solutions that power dynamic applications using frameworks like React and Angular.</p>
+
+                            <h4>Why Work With Me?</h4>
+                            <ul>
+                                <li>💡 Proven expertise in building enterprise-grade WordPress solutions</li>
+                                <li>🚀 Performance-driven approach to ensure fast and efficient websites</li>
+                                <li>🔒 Security-first mindset to protect applications from vulnerabilities</li>
+                                <li>⚙️ Automation and DevOps to enhance productivity and scalability</li>
+                            </ul>
+
+                            <p>I am passionate about delivering high-quality, secure, and future-proof digital solutions that empower businesses. Let's collaborate to elevate your WordPress project to the next level!</p>
+                        </div>
+
+                        <button id="read-more-btn" class="read-more-btn"> </button>
                     </div>
-                    <div class="service-card">
-                        <h3>Theme Development</h3>
-                        <p>Beautiful, responsive WordPress themes</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Plugin Development</h3>
-                        <p>Custom functionality for your site</p>
-                    </div>
+                </div>
+                <div class="about-image" style="text-align: center;">
+                    <img src="assets/imgs/profile-pic-15.png" alt="Mohammed Salah at work" loading="lazy" style="width: 50%">
                 </div>
             </div>
         </section>
 
-                <!-- Add this inside <main> element -->
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <div class="contact-wrapper">
-                    <div class="contact-form">
-                        <form action="mailto:mofree81@gmail.com" method="post" enctype="text/plain">
-                            <div class="form-group">
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message:</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="submit-btn">Send Message</button>
-                        </form>
+        <section id="services" class="fadeIn">
+            <h2>Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-wordpress"></i>
                     </div>
-                    <div class="contact-social">
-                        <a href="https://wa.me/201000765729" target="_blank" class="whatsapp-link">
-                            <img src="assets/images/whatsapp-logo.png" alt="WhatsApp" class="whatsapp-icon">
-                            <span>Chat on WhatsApp</span>
-                        </a>
-                    </div>
+                    <h3>WordPress Development & Customization</h3>
+                    <p>Expert development of custom themes, plugins, and API integrations to extend WordPress functionality beyond its core capabilities.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Custom theme development</li>
+                        <li><i class="fas fa-check-circle"></i> Plugin development</li>
+                        <li><i class="fas fa-check-circle"></i> API integrations</li>
+                        <li><i class="fas fa-check-circle"></i> SEO-friendly solutions</li>
+                    </ul>
                 </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Performance Optimization</h3>
+                    <p>Comprehensive performance tuning to ensure your WordPress sites load quickly and efficiently.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Database optimization</li>
+                        <li><i class="fas fa-check-circle"></i> Advanced caching strategies</li>
+                        <li><i class="fas fa-check-circle"></i> Asset optimization</li>
+                        <li><i class="fas fa-check-circle"></i> Server-side enhancements</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Automation & DevOps</h3>
+                    <p>Streamlining development and deployment with efficient automation techniques.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> CI/CD pipelines</li>
+                        <li><i class="fas fa-check-circle"></i> Automated backups</li>
+                        <li><i class="fas fa-check-circle"></i> Scheduled tasks</li>
+                        <li><i class="fas fa-check-circle"></i> Deployment automations</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security & Compliance</h3>
+                    <p>Implementing robust security measures to protect your WordPress sites from vulnerabilities.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Secure authentication</li>
+                        <li><i class="fas fa-check-circle"></i> Protection against attacks</li>
+                        <li><i class="fas fa-check-circle"></i> SSL/TLS implementation</li>
+                        <li><i class="fas fa-check-circle"></i> Security audits</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>WordPress API & Headless Development</h3>
+                    <p>Creating dynamic applications using WordPress REST API and GraphQL with modern frameworks.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> REST API development</li>
+                        <li><i class="fas fa-check-circle"></i> GraphQL implementation</li>
+                        <li><i class="fas fa-check-circle"></i> React integration</li>
+                        <li><i class="fas fa-check-circle"></i> Headless CMS solutions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="fadeIn">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">WordPress</div>
+                <div class="skill-item">PHP</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">MySQL</div>
+                <div class="skill-item">HTML/CSS</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">Angular</div>
+                <div class="skill-item">REST API</div>
+                <div class="skill-item">GraphQL</div>
+                <div class="skill-item">Redis</div>
+                <div class="skill-item">Nginx</div>
+                <div class="skill-item">Git</div>
+                <div class="skill-item">CI/CD</div>
+                <div class="skill-item">Docker</div>
+                <div class="skill-item">AWS</div>
+                <div class="skill-item">Security</div>
+            </div>
+        </section>
+
+        <section id="contact" class="fadeIn">
+            <h2>Get in Touch</h2>
+            <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <a href="#" id="whatsappBtn" class="submit-btn" style="background-color: #25D366; margin-left: 10px; text-decoration: none; text-align: center;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Me
+                    </a>
+                </div>
+                <div id="form-status" style="margin-top: 15px;"></div>
+            </form>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Abo Salah. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
+        <p>&copy; 2023 Mohammed Salah. All rights reserved.</p>
     </footer>
+<script>// Form handling with EmailJS
+            const contactForm = document.getElementById('contactForm');
+            const formStatus = document.getElementById('form-status');
+            const whatsappBtn = document.getElementById('whatsappBtn');
+
+            if (contactForm) {
+                // Load EmailJS script
+                const script = document.createElement('script');
+                script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
+                document.head.appendChild(script);
+
+                script.onload = function() {
+                    // Initialize EmailJS with your user ID (sign up at emailjs.com)
+                    emailjs.init("F0z9HSYzTS_B_GH78"); // Replace with your EmailJS user ID
+                };
+
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    formStatus.textContent = "Sending...";
+                    formStatus.style.color = "#015385";
+
+                    // Get form data
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const subject = document.getElementById('subject').value;
+                    const message = document.getElementById('message').value;
+
+                    // Prepare template parameters
+                    const templateParams = {
+                        from_name: name,
+                        reply_to: email,
+                        to_email: "mofree81@gmail.com",
+                        subject: subject,
+                        message: message
+                    };
+
+                    // Send the email (you need to create a template in EmailJS)
+                    emailjs.send("service_uxfl28b", "template_xgauym4", templateParams)
+                        .then(function() {
+                            formStatus.textContent = "Thank you! Your message has been sent successfully.";
+                            formStatus.style.color = "green";
+                            contactForm.reset();
+                        }, function(error) {
+                            formStatus.textContent = "Oops! There was an error sending your message.";
+                            formStatus.style.color = "red";
+                            console.error("EmailJS error:", error);
+                        });
+                });
+            }
+
+            // WhatsApp integration
+            if (whatsappBtn) {
+                whatsappBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    const name = document.getElementById('name').value || "";
+                    const email = document.getElementById('email').value || "";
+                    const subject = document.getElementById('subject').value || "";
+                    const message = document.getElementById('message').value || "Hello, I'd like to connect with you!";
+
+                    // Create WhatsApp message
+                    let whatsappMessage = "";
+                    if (name) whatsappMessage += "Name: " + name + "\n";
+                    if (email) whatsappMessage += "Email: " + email + "\n";
+                    if (subject) whatsappMessage += "Subject: " + subject + "\n\n";
+                    whatsappMessage += message;
+
+                    // Format the phone number (Egyptian format)
+                    const phoneNumber = "201000765729"; // Adding country code (20) to your number
+
+                    // Open WhatsApp with the message
+                    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+                });
+            }</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+
+            mobileMenuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('show');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!navLinks.contains(event.target) && !mobileMenuBtn.contains(event.target)) {
+                    navLinks.classList.remove('show');
+                }
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    if (this.getAttribute('href') === '#') return;
+
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+
+                        // Close mobile menu after clicking a link
+                        navLinks.classList.remove('show');
+                    }
+                });
+            });
+
+            // Simple form validation
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    // Here you would typically send the form data to a server
+                    // For now, we'll just show a success message
+                    alert('Thank you for your message! I will get back to you soon.');
+                    contactForm.reset();
+                });
+            }
+
+            // Add animation to elements as they come into view
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fadeIn');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+        });
+        // Read More functionality
+        const readMoreBtn = document.getElementById('read-more-btn');
+        const bioShort = document.getElementById('bio-short');
+        const bioFull = document.getElementById('bio-full');
+
+        if (readMoreBtn) {
+            readMoreBtn.addEventListener('click', function() {
+                if (bioFull.style.display === 'none') {
+                    bioFull.style.display = 'block';
+                    bioShort.style.display = 'none';
+                    readMoreBtn.classList.add('less');
+                } else {
+                    bioFull.style.display = 'none';
+                    bioShort.style.display = 'block';
+                    readMoreBtn.classList.remove('less');
+                }
+            });
+        }
+    </script>
 </body>
 </html>
